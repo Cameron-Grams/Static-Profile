@@ -1,0 +1,97 @@
+body{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.css-header{
+    background-color: #008080;
+    color: white;
+    min-width: 650px;
+    display: flex;
+    margin: 0;
+    padding: 12px;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.css-name{
+    font-size: 2.5em;
+    position: absolute;
+    margin: 10px;
+    left: 20px;
+}
+
+.css-options{
+    margin: 20px 15px;
+}
+.css-upperBox{
+    flex: 1 1 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-transition{
+    flex: 1 1 350px;
+    background: linear-gradient( white, #008080 );
+    margin: 0;
+}
+
+.css-projects{
+    margin: 0;
+    flex: 1 1 auto;
+    background-color: #008080;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.css-images{
+    width: 100%;
+}
+
+.css-projectRow{
+    background-color: white;
+}
+
+.css-row{
+    width: 100%;
+}
+
+
+@media only screen and ( min-width: 760px ) {
+
+    .css-row{
+        margin: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .css-projectRow{
+        border-radius: 5px;
+        padding: 15px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+    }
+
+    .css-rowItem{
+        flex: 1 1 auto;
+    }
+
+}
+
