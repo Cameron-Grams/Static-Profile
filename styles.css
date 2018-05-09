@@ -14,7 +14,7 @@ a{
 }
 
 .css-navReference:hover{
-    color: #ff5e00;
+    color: #00ffff;
 }
 
 .css-projectSpan{
@@ -32,6 +32,10 @@ a{
     background-color: #008080;
     color: white;
     min-width: 650px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
     display: flex;
     margin: 0;
     padding: 12px;
@@ -51,6 +55,11 @@ a{
     margin: 20px 15px;
 }
 
+#projects{
+    background-color: #008080;
+    height: 100px;
+}
+
 .css-projectTitleBar{
     text-align: center;
     margin: 50px;
@@ -58,7 +67,8 @@ a{
 }
 
 .css-upperBox{
-
+    margin-top: 100px;
+    min-width: 700px;
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
@@ -98,8 +108,17 @@ a{
 
 .css-projectRow{
     background-color: white;
-    margin: 0;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 15px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
 }
+
 
 .css-row{
     margin: 0;
@@ -120,14 +139,7 @@ a{
     }
 
     .css-projectRow{
-        border-radius: 5px;
-        padding: 15px;
         width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-content: center;
-        text-align: center;
     }
 
     .css-rowItem{
