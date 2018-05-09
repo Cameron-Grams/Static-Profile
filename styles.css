@@ -2,7 +2,7 @@ body{
     box-sizing: content-box;
     padding: 0;
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -11,6 +11,21 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.css-navReference:hover{
+    color: #ff5e00;
+}
+
+.css-projectSpan{
+    margin: 10px;
+}
+
+.css-projectReference{
+    color: #007f7f;
+}
+.css-projectReference:hover{ 
+    color: #b24200;
 }
 
 .css-header{
@@ -35,11 +50,30 @@ a{
 .css-options{
     margin: 20px 15px;
 }
+
+.css-projectTitleBar{
+    text-align: center;
+    color: white;
+}
+
 .css-upperBox{
-    flex: 1 1 250px;
+
+    flex: 1 1 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.css-photoDiv{
+    width: 25%;
+    border-radius: 10px;
+}
+
+.css-photoDiv > img{
+    margin-top: 35px;
+    width: 100%;
+    border-radius: inherit;
 }
 
 .css-transition{
@@ -69,6 +103,11 @@ a{
     width: 100%;
 }
 
+.css-contact{
+    text-align: center;
+    background-color: white;
+    color: #008080;
+}
 
 @media only screen and ( min-width: 760px ) {
 
