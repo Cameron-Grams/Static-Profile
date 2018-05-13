@@ -151,15 +151,16 @@ a{
     align-items: center;
 }
 
-.css-modalOverlay{
+#css-modalOverlay{
+    padding: 20px;
     text-align: center;
     min-width: 250px;
-    min-height: 150px;
     color: white;
     background-color: rgba( 1, 23, 58, 1 );
     border: 1px solid white;
     border-radius: 5px;
     width: 85%;
+    height: auto;
 }
 
 #css-modal.closed{
@@ -176,10 +177,27 @@ button.css-callModalButton{
     font-size: 1.5em;
 }
 
-#closeModal:hover{
-    color: yellow;
+.css-closeModalStyling{
+    display: block;
+    width: 25%;
+    margin: 20px auto 0px;
 }
 
+#closeModal{
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+#closeModal:hover{
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+.css-modalElement{
+    color: white;
+    text-align: center;
+}
 
 @media only screen and ( min-width: 760px ) {
 
@@ -197,7 +215,7 @@ button.css-callModalButton{
         flex: 1 1 auto;
     }
     
-    .css-modalOverlay{
+    #css-modalOverlay{
         width: 50%;
     }
 }
