@@ -28,19 +28,21 @@
 
         <h2 class="css-projectTitleBar" >Projects Using React and Node</h2>
         <div class="css-row">
+
             <div class="css-projectRow" >
                 <h3>Analyst Timeline</h3>
                 <img class="css-images rowItem" src="https://s3.us-east-2.amazonaws.com/cameronprofilephotos/analystTimeline2.png" >                
-
-                <button id="openModal" >Open</button>
-
+                <button class="css-projectReference css-callModalButton" id="openAnalystTimelineModal" value="1" onclick="toggleAndSend( event )">Details</button>
                 <span class="css-projectSpan" ><a class="css-projectReference" href="https://www.analyst-timeline.xyz/" >The Site</a> | <a class="css-projectReference" href="https://github.com/Cameron-Grams/Analyst_timeline_client" >The Code</a></span>
             </div>
+
             <div class="css-projectRow secondRow" >
                 <h3>532 Packard St.</h3>
                 <img class="css-images rowItem" src="https://s3.us-east-2.amazonaws.com/cameronprofilephotos/532packard.png" >
+                <button class="css-projectReference css-callModalButton" id="open532Modal" value="2" onclick="toggleAndSend( event )">Details</button>
                 <span class="css-projectSpan" ><a class="css-projectReference" href="https://www.532packard.com/" >The Site</a> | <a class="css-projectReference" href="https://github.com/Cameron-Grams/532Packard" >The Code</a></span>
             </div>
+
         </div>
 
         <h2 class="css-projectTitleBar" >Projects Using JQuery and Node</h2>
@@ -48,6 +50,7 @@
             <div class="css-projectRow" >
                 <h3>Math Dojo</h3>
                 <img class="css-images rowItem" src="https://s3.us-east-2.amazonaws.com/cameronprofilephotos/eagleDojo.svg" >     
+                <button class="css-projectReference css-callModalButton" id="openMathDojoModal" value="3" onclick="toggleAndSend( event )">Details</button>
                 <span class="css-projectSpan" ><a class="css-projectReference" href="http://www.math-dojo.us/math-dojo.html" >The Site</a> | <a class="css-projectReference" href="https://github.com/Cameron-Grams/MathDojo" >The Code</a></span>
             </div>
         </div>
@@ -58,11 +61,13 @@
             <div class="css-projectRow secondRow" >
                 <h3>US Language Distribution</h3>
                 <img class="css-images rowItem" src="https://s3.us-east-2.amazonaws.com/cameronprofilephotos/langDist.png" >    
+                <button class="css-projectReference css-callModalButton" id="openUSLanguagesModal" value="4" onclick="toggleAndSend( event )">Details</button>
                 <span class="css-projectSpan" ><a class="css-projectReference" href="https://us-languages2013.fun/" >The Site</a> | <a class="css-projectReference" href="https://github.com/Cameron-Grams/USLanguageDistribution" >The Code</a></span>
             </div>
             <div class="css-projectRow" >
                 <h3>Simon</h3>
                 <img class="css-images rowItem" src="https://s3.us-east-2.amazonaws.com/cameronprofilephotos/simon.png" >
+                <button class="css-projectReference  css-callModalButton" id="openSimonModal" value="5" onclick="toggleAndSend( event )">Details</button>
                 <span  class="css-projectSpan" ><a class="css-projectReference" href="https://cameron-grams.github.io/Simon/" >The Site</a> | <a class="css-projectReference" href="https://github.com/Cameron-Grams/Simon" >The Code</a></span>
 
             </div>
@@ -72,6 +77,7 @@
             <div class="css-projectRow" >
                 <h3>Pomodoro</h3>
                 <img class="css-images rowItem" src="https://s3.us-east-2.amazonaws.com/cameronprofilephotos/pomodoro.png" >
+                <button class="css-projectReference  css-callModalButton" id="openPomodoroModal" value="6" onclick="toggleAndSend( event )">Details</button>
                 <span class="css-projectSpan" ><a class="css-projectReference" href="https://cameron-grams.github.io/Pomodoro_Clock/" >The Site</a> | <a class="css-projectReference" href="https://github.com/Cameron-Grams/Pomodoro_Clock" >The Code</a></span>
 
             </div>
@@ -82,6 +88,7 @@
             <div class="css-projectRow" >
                 <h3>Real Automotive</h3>
                 <img class="css-images rowItem" src="https://s3.us-east-2.amazonaws.com/cameronprofilephotos/realAuto.png" >
+                <button class="css-projectReference css-callModalButton" id="openRealAutomotiveModal" value="7" onclick="toggleAndSend( event )">Details</button>
                 <span class="css-projectSpan" ><a class="css-projectReference" href="http://www.realautomotive-nc.com/" >The Site</a> | <a class="css-projectReference" href="https://github.com/Cameron-Grams/RealAutomotive" >The Code</a></span>
 
             </div>
@@ -93,12 +100,19 @@
         <span><a class="css-projectReference" href="https://www.linkedin.com/in/cameron-grams-8517a9b/" >LinkedIn</a> | <a class="css-projectReference" href="https://github.com/Cameron-Grams" >Github</a></span>
         <h3><a class="css-projectReference" href="https://s3.us-east-2.amazonaws.com/cameronprofilephotos/Cameron_Grams_2018.pdf" >Resume</a></h3>
     </div>
-
-
 </div>
+
+<div id="css-modal">
+  <div class="css-modalOverlay">
+    <p>Modal</p>
+    <a class="css-closeModalStyling" id="closeModal" >Click to Close</a>
+  </div>
+</div>
+
 
 
 
 </body>
 <script src="./logic.js" ></script>
 </html>
+

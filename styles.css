@@ -137,7 +137,7 @@ a{
 /* =================================== */
 /* Modal style details  */
 
-.css-modal{
+#css-modal{
     z-index: 10;
     position: fixed;
     top: 0px;
@@ -147,6 +147,37 @@ a{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-modalOverlay{
+    text-align: center;
+    min-width: 250px;
+    min-height: 150px;
+    color: white;
+    background-color: rgba( 1, 23, 58, 1 );
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 85%;
+}
+
+#css-modal.closed{
+    display: none;
+}
+
+.css-callModalButton{
+    margin: 10px;
+}
+
+button.css-callModalButton{
+    border: 1px solid transparent;
+    background-color: white;
+    font-size: 1.5em;
+}
+
+#closeModal:hover{
+    color: yellow;
 }
 
 
@@ -165,6 +196,9 @@ a{
     .css-rowItem{
         flex: 1 1 auto;
     }
-
+    
+    .css-modalOverlay{
+        width: 50%;
+    }
 }
 

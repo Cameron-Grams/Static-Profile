@@ -1,17 +1,17 @@
+console.log( 'in logic for site' );
+
+
 var modal = document.querySelector( "#css-modal" );
-var modalOverlay = document.querySelector( "#modal-overlay" );
 var closeButton = document.querySelector( "#closeModal" );
-var openButton = document.querySelector( "#openModal" );
 
 closeButton.addEventListener("click", function() {
-  modal.classList.toggle("closed");
-  modalOverlay.classList.toggle("closed");
+    modal.classList.toggle("closed");
 });
 
-openButton.addEventListener("click", function() {
-  modal.classList.toggle("closed");
-  modalOverlay.classList.toggle("closed");
-});
+function toggleAndSend( e ) {
+    modal.classList.toggle("closed");
+    console.log( e.target.value );
+}
 
-
+modal.classList.toggle("closed");
 
