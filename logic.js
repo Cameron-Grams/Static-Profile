@@ -1,23 +1,16 @@
-console.log( 'in logic for site' );
+const endpoint = "https://thawing-bayou-67848.herokuapp.com/";
+
+fetch( `${ endpoint }wake` )
+    .then( res => res.json() ) 
+    .then( json => console.log( json.message ) );
 
 var modalOverlay = document.querySelector( "#css-modalOverlay" );
 
 var modal = document.querySelector( "#css-modal" );
 var closeButton = document.querySelector( "#closeModal" );
 
-/*
-const projectObject = {
-     title: "TITLE OF OBJECT",
-     firstParagraph: "Text text text",
-     secondParagraph:"2 Text text text",
-     thirdParagraph: "3 Text text text"
-    };
-*/
-
-const endpoint = "http://localhost:8080/projects";
-
 const retrieveProject = ( index ) => {
-        fetch( `${ endpoint }`, {
+        fetch( `${ endpoint }projects`, {
             method: 'POST', 
             body: JSON.stringify( index ), 
             headers: new Headers({
@@ -32,6 +25,8 @@ const retrieveProject = ( index ) => {
         .catch( error => console.error('Error:', error ))
     };
 
+// a function with Secondary Effects: Whhhaaaaa......?
+// As Master Yuan-Ma said: "If it works it is only partially stupid..." 
 const addProjectToDOM = ( projectObject ) => {
         var modalTitleNode = document.createElement( "h1" );
         var modalTitle = document.createTextNode( projectObject.title ); 
@@ -50,7 +45,6 @@ const addProjectToDOM = ( projectObject ) => {
         var modalThirdParagraph = document.createTextNode( projectObject.thirdParagraph );
         modalThirdParagraphNode.appendChild( modalThirdParagraph );
 
-        // build up with prepend...
         modalOverlay.prepend( modalThirdParagraphNode );
         modalOverlay.prepend( modalSecondParagraphNode );
         modalOverlay.prepend( modalFirstParagraphNode );
@@ -73,7 +67,6 @@ function toggleAndSend( e ) {
     const index = {
         index: indexValue
     };
-    console.log( 'index for this project: ', index );
     retrieveProject( index );
 }
 

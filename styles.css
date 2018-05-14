@@ -22,8 +22,6 @@ a{
     margin: 10px;
 }
 
-
-
 .css-projectReference{
     color: #007f7f;
 }
@@ -81,7 +79,7 @@ a{
 }
 
 .css-photoDiv{
-    width: 25%;
+    width: 65%;
     border-radius: 10px;
 }
 
@@ -92,6 +90,7 @@ a{
 }
 
 .css-transition{
+    display: none;
     flex: 1 1 250px;
     background: linear-gradient( white, #008080 );
     margin: 0;
@@ -178,6 +177,8 @@ button.css-callModalButton{
 }
 
 .css-closeModalStyling{
+    background-color: rgba( 1, 23, 58, 1 );
+    text-align: center;
     display: block;
     width: 25%;
     margin: 20px auto 0px;
@@ -200,6 +201,14 @@ button.css-callModalButton{
 }
 
 @media only screen and ( min-width: 760px ) {
+
+    .css-photoDiv{
+        width: 25%;
+    }
+
+    .css-transition{
+        display: block;
+    }
 
     .css-row{
         margin: 15px;
