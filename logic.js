@@ -11,22 +11,6 @@ var modalOverlay = document.querySelector( "#css-modalOverlay" );
 var modal = document.querySelector( "#css-modal" );
 var closeButton = document.querySelector( "#closeModal" );
 
-const retrieveProject = ( index ) => {
-        fetch( `${ endpoint }projects`, {
-            method: 'POST', 
-            body: JSON.stringify( index ), 
-            headers: new Headers({
-              'Content-Type': 'application/json'
-            } )
-        } ).then( res => 
-            res.json() 
-        )
-        .then( json => {
-             addProjectToDOM( json ); 
-            } )
-        .catch( error => console.error('Error:', error ))
-    };
-
 const callAllProjects = () => {
         fetch( `${ endpoint }all-projects`, {
             method: 'GET', 
@@ -44,7 +28,7 @@ const callAllProjects = () => {
 
 callAllProjects();
 
-// a function with Secondary Effects: Whhhaaaaa......?
+// a function with Secondary Effects: necessary since there is no render function in plain Javascript
 // As Master Yuan-Ma said: "If it works it is only partially stupid..." 
 const addProjectToDOM = ( projectObject ) => {
         var modalTitleNode = document.createElement( "h1" );
