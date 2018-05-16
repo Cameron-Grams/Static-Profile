@@ -1,40 +1,14 @@
-// const endpoint = "https://thawing-bayou-67848.herokuapp.com/";
-// let allProjects = require( './projects' );
 const allProjects = projects; 
-console.log( 'project: ', allProjects );
+
 const cleanModal = () => {
     while( modalOverlay.firstChild ){
         modalOverlay.removeChild( modalOverlay.firstChild );
     };
 }
 
-/*
-fetch( `${ endpoint }wake` )
-    .then( res => res.json() ) 
-    .then( json => console.log( json.message ) );
-*/
-
 var modalOverlay = document.querySelector( "#css-modalOverlay" );
-
 var modal = document.querySelector( "#css-modal" );
 var closeButton = document.querySelector( "#closeModal" );
-
-const callAllProjects = () => {
-        fetch( `${ endpoint }all-projects`, {
-        method: 'GET', 
-        headers: new Headers({
-            'Content-Type': 'application/json'
-        } )
-        } ).then( res => 
-            res.json() 
-        )
-        .then( json => {
-            allProjects = json;
-        } )
-        .catch( error => console.error('Error:', error ))
-    };
-
-// callAllProjects();
 
 // a function with Secondary Effects: necessary since there is no render function in plain Javascript
 // As Master Yuan-Ma said: "If it works it is only partially stupid..." 
