@@ -1,15 +1,18 @@
 // const endpoint = "https://thawing-bayou-67848.herokuapp.com/";
-let allProjects = require( './projects' );
-
+// let allProjects = require( './projects' );
+const allProjects = projects; 
+console.log( 'project: ', allProjects );
 const cleanModal = () => {
     while( modalOverlay.firstChild ){
         modalOverlay.removeChild( modalOverlay.firstChild );
     };
 }
 
+/*
 fetch( `${ endpoint }wake` )
     .then( res => res.json() ) 
     .then( json => console.log( json.message ) );
+*/
 
 var modalOverlay = document.querySelector( "#css-modalOverlay" );
 
@@ -31,7 +34,7 @@ const callAllProjects = () => {
         .catch( error => console.error('Error:', error ))
     };
 
-callAllProjects();
+// callAllProjects();
 
 // a function with Secondary Effects: necessary since there is no render function in plain Javascript
 // As Master Yuan-Ma said: "If it works it is only partially stupid..." 
@@ -70,7 +73,7 @@ function toggleAndSend( e ) {
     const index = {
         index: indexValue
     };
-    let currentProject = allProjects.projects[ indexValue ];  
+    let currentProject = allProjects[ indexValue ];  
     addProjectToDOM( currentProject );
 }
 
