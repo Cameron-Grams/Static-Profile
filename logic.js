@@ -1,5 +1,5 @@
-const endpoint = "https://thawing-bayou-67848.herokuapp.com/";
-let allProjects = null;
+// const endpoint = "https://thawing-bayou-67848.herokuapp.com/";
+let allProjects = require( './projects' );
 
 const cleanModal = () => {
     while( modalOverlay.firstChild ){
