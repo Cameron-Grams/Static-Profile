@@ -1,5 +1,4 @@
 const endpoint = "https://thawing-bayou-67848.herokuapp.com/";
-//const endpoint = "http://localhost:8080/";
 let allProjects = null;
 
 const cleanModal = () => {
@@ -62,7 +61,6 @@ const addProjectToDOM = ( projectObject ) => {
 };
 
 closeButton.addEventListener("click", function() {
-//    cleanModal();
     modal.classList.toggle("closed");
 });
 
