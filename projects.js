@@ -42,6 +42,3 @@ const projects = {
         thirdParagraph: "A future site could add the contact form to reach the garage with an email, as an additional option to the phone call feature."
        }
 };
-
-
-
