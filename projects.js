@@ -2,7 +2,7 @@ const projects = {
     1: {
         title: "Analyst Timeline",
         firstParagraph: "This project was built using React, Redux, and MongoDB. It relies on hosting by Heroku for the server endpoints and mLab for the database hosting. There are separate data collections for users, timelines and timeline entries.",
-        secondParagraph: "I find a graphic reprsentation of information helpful, especially when trying to events in context. This is the tool I wish that I had had before my second deployment to Iraq when I was trying to understand Iraqi foreign relations. ",
+        secondParagraph: "I find a graphic reprsentation of information helpful, especially when trying to place events in context. This is the tool I wish that I had when I was trying to understand Iraqi foreign relations. ",
         thirdParagraph: "The next step will be to migrate the timeline from a CSS component to using SVG."
        },
     2: {
@@ -13,7 +13,7 @@ const projects = {
        },
     3: {
         title: "Math Dojo",
-        firstParagraph: "This site was built using JQuery Node, and MongoDB.  It is hosted on Heroku and uses mLab to host the database. If no one is using the site Heroku's dynos will sleep; IF YOU'D LIKE TO SEE THE SITE PLEASE BE PATIENT WHILE HEROKU WAKES... Thank you.",
+        firstParagraph: "This site was built using JQuery, Node, and MongoDB.  It is hosted on Heroku and uses mLab to host the database. If no one is using the site Heroku's dynos will sleep; If you'd like to see the site PLEASE BE PATIENT AFTER CLICKING THE LINK WHILE HEROKU WAKES... Thank you.",
         secondParagraph: "The intent was to provide a place where my nephew could practice his math.  The themes of animals and martial arts were to appeal to him.",
         thirdParagraph: "The next step will be to change the selection of the theme; another nephew is a fan of dinosaurs..."
        },
@@ -43,14 +43,14 @@ const projects = {
        },
    8: {
         title: "Conway's Game of Life",
-        firstParagraph: "This is a Reacht/Redux implementation of the two dimensional array needed to display the autonomous cells. I used SVG to create the display.",
+        firstParagraph: "This is a React/Redux implementation of the two dimensional array needed to display the autonomous cells. I used SVG to create the display.",
         secondParagraph: "This was an exercise adopting the algorithm to the React/Redux framework.",
         thirdParagraph: "This is a simple implementation and I plan to look at other approaches."
        },
    9: {
         title: "The Model Blockchain Project",
         firstParagraph: "This is an in-browser blockchain built using React and Redux.",
-        secondParagraph: "This site was only meant to provide a chance for a hands-on demonstration of some of the concepts that make blockchain such interesting technology.",
+        secondParagraph: "This site was meant to provide a chance for a hands-on demonstration of some of the concepts that make blockchain such interesting technology.",
         thirdParagraph: "There is no mention of Solidity or Geth so there is a great deal that can be expanded on with this site."
        }
 };
