@@ -13,7 +13,7 @@ const projects = {
        },
     3: {
         title: "Math Dojo",
-        firstParagraph: "This site was built using JQuery Node, and MongoDB.  It is hosted on Heroku and uses mLab to host the database.",
+        firstParagraph: "This site was built using JQuery Node, and MongoDB.  It is hosted on Heroku and uses mLab to host the database. If no one is using the site Heroku's dynos will sleep; IF YOU'D LIKE TO SEE THE SITE PLEASE BE PATIENT WHILE HEROKU WAKES... Thank you.",
         secondParagraph: "The intent was to provide a place where my nephew could practice his math.  The themes of animals and martial arts were to appeal to him.",
         thirdParagraph: "The next step will be to change the selection of the theme; another nephew is a fan of dinosaurs..."
        },
@@ -40,5 +40,17 @@ const projects = {
         firstParagraph: "This is a straight HTML/CSS site with Javascript enabling the Google Maps feature.",
         secondParagraph: "This is the first commercial site that I built.",
         thirdParagraph: "A future site could add the contact form to reach the garage with an email, as an additional option to the phone call feature."
+       },
+   8: {
+        title: "Conway's Game of Life",
+        firstParagraph: "This is a Reacht/Redux implementation of the two dimensional array needed to display the autonomous cells. I used SVG to create the display.",
+        secondParagraph: "This was an exercise adopting the algorithm to the React/Redux framework.",
+        thirdParagraph: "This is a simple implementation and I plan to look at other approaches."
+       },
+   9: {
+        title: "The Model Blockchain Project",
+        firstParagraph: "This is an in-browser blockchain built using React and Redux.",
+        secondParagraph: "This site was only meant to provide a chance for a hands-on demonstration of some of the concepts that make blockchain such interesting technology.",
+        thirdParagraph: "There is no mention of Solidity or Geth so there is a great deal that can be expanded on with this site."
        }
 };
